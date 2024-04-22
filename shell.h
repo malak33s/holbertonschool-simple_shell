@@ -1,5 +1,5 @@
-#ifndef SHELL
-#define SHELL
+#ifndef SHELL_H
+#define SHELL_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,5 +17,5 @@
 #include <sys/resource.h>
 
 void prompt(void);
-
+void prgpcommand(char *command);
 #endif
