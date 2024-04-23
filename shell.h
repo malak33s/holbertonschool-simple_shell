@@ -16,6 +16,7 @@
 #include <sys/time.h>
 #include <sys/resource.h>
 
-void prompt(void);
+void prompt();
 void prgpcommand(char *command);
+
 #endif

@@ -4,6 +4,12 @@
  *
  */
 
+void prompt()
+{
+	prinft("$ ");
+	fflush(stdout);
+}
+
 void prgpcommand(char *command)
 {
 	pid_t pid;
