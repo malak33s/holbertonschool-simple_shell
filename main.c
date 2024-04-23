@@ -14,7 +14,7 @@ int main()
 	{
 		disprompt();
 
-		if (getiline(&command, &bufsize, stdin) == -1)
+		if (getline(&command, &bufsize, stdin) == -1)
 		{
 			printf("\n");
 			break;
