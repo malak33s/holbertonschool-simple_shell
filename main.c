@@ -7,24 +7,26 @@
 
 int main()
 {
-	char command[];
+	char *command = NULL;
+	size_t bufsize = 0;
 
 	while (1)
 	{
-		prompt();
+		disprompt();
 
-		if (fgets(command), stdin) == NULL)
+		if (getiline(&command, &bufsize, stdin) == -1)
 		{
 			printf("\n");
 			break;
 		}
+		
 		command[strcspn(command, "\n")] = '\0';
 		
 		if (strlen(command) > 0)
 		{
-			prgpcommand(command);
+			procommand(command);
 		}
 	}
-
+	free(command);
 	return 0;
 }

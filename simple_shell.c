@@ -23,7 +23,7 @@ void procommand(char *command)
 	}
 	else if (pid == 0)
 	{
-		if (execve(commande, args, NULL) == -1)
+		if (execve(command, args, NULL) == -1)
 		{
 			perror("execve");
 			exit(EXIT_FAILURE);
