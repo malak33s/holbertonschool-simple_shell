@@ -4,19 +4,18 @@
  *
  */
 
-void prompt()
+void disprompt()
 {
 	printf("$ ");
 	fflush(stdout);
 }
 
-void prgpcommand(char *command)
+void procommand(char *command)
 {
-	pid_t pid;
-	int status;
+	char *args[] = { command, NULL };
 
-	pid = fork();
-
+	pid_t pid = fork();
+	
 	if (pid < 0)
 	{
 		perror("fork");
@@ -24,14 +23,15 @@ void prgpcommand(char *command)
 	}
 	else if (pid == 0)
 	{
-		if (execlp(command, command, NULL) == -1)
+		if (execve(commande, args, NULL) == -1)
 		{
-			perror("exec");
+			perror("execve");
 			exit(EXIT_FAILURE);
 		}
 	}
 	else
 	{
+		int status;
 		if (waitpid(pid, &status, 0) == -1)
 		{
 			perror("waitpid");
