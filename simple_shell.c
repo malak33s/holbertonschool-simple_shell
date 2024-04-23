@@ -6,7 +6,7 @@
 
 void prompt()
 {
-	prinft("$ ");
+	printf("$ ");
 	fflush(stdout);
 }
 
