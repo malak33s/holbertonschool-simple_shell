@@ -1,0 +1,25 @@
+TH _SIMPLE_SHELL "25/04/2024" "1.0" "simple shell man page"
+
+.SH NAME
+
+simple_shell
+
+.SH SYNOPSIS 
+
+$./hsh [option] [file]
+
+.SH DESCRIPTION
+
+The simple_shell is a program developed in the C language to create an interactive, simple  system shell. It allows the user to interact with the operating system by entering commands on the command line. simple_shell supports basic functionality such as command execution, error handling and environment variables.
+
+
+.SH BUGS
+
+No Known bugs.
+
+
+.SH AUTHORS
+
+Ilhan Ben Bouziane.
+
+Malak sarhani.
