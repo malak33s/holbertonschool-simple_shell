@@ -24,7 +24,7 @@ int procommand(char *command)
 		
 		if (execve(args[0], args, NULL) == -1)
 		{
-			fprintf(stderr, "Error: execve failed\n");
+			fprintf(stderr, " /bin/ls\n");
 			exit(EXIT_FAILURE);
 		}
 	}
