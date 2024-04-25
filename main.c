@@ -1,11 +1,12 @@
 #include "shell.h"
+
 /**
+ * main - shell program initializes to enters and read command from the user
  *
- *
- *
+ * Return: Always 0
  */
 
-int main()
+int main(void)
 {
 	char *command = NULL;
 	size_t bufsize = 0;
@@ -21,7 +22,7 @@ int main()
 		{
 			break;
 		}
-		
+
 		if (strlen(command) > 0)
 		{
 			if (procommand(command) == -1)
@@ -30,7 +31,7 @@ int main()
 			}
 		}
 	}
-	
+
 	free(command);
-	return 0;
+	return (0);
 }

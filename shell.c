@@ -1,7 +1,9 @@
 #include "shell.h"
-/*
+
+/**
  * procommand - excuting command enter by user.
- *
+ *@command: command enter by user
+ * Return: Always 0
  */
 
 int procommand(char *command)
@@ -10,7 +12,7 @@ int procommand(char *command)
 	char *token = strtok(command, " \n");
 	pid_t pid = fork();
 
-	
+
 
 	if (pid < 0)
 	{
@@ -21,7 +23,7 @@ int procommand(char *command)
 	{
 		args[0] = token;
 		args[1] = NULL;
-		
+
 		if (execve(args[0], args, environ) == -1)
 		{
 			fprintf(stderr, " error\n");
@@ -38,5 +40,5 @@ int procommand(char *command)
 			return (1);
 		}
 	}
-	return 0;
+	return (0);
 }

@@ -19,6 +19,5 @@ extern char **environ;
 #include <sys/resource.h>
 
 void prompt(void);
-void disprompt(void);
 int procommand(char *command);
 #endif
