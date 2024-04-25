@@ -8,7 +8,7 @@
 int main()
 {
 	char *command = NULL;
-	size_t bufsize = 0;
+	/*size_t bufsize = 0;*/
 
 	while (1)
 	{
@@ -16,7 +16,7 @@ int main()
 		{
 			prompt();
 		}
-
+/*
 		if (getline(&command, &bufsize, stdin) == -1)
 		{
 			printf("\n");
@@ -31,7 +31,7 @@ int main()
 			{
 				fprintf(stderr, "error command: %s\n", command);
 			}
-		}
+		}*/
 	}
 	
 	free(command);
