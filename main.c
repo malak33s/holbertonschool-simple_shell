@@ -12,7 +12,7 @@ int main()
 
 	while (1)
 	{
-		disprompt();
+		prompt();
 
 		if (getline(&command, &bufsize, stdin) == -1)
 		{
@@ -24,9 +24,13 @@ int main()
 		
 		if (strlen(command) > 0)
 		{
-			procommand(command);
+			if (procommand(command) == -1)
+			{
+				fprintf(stderr, "error command: %s\n", command);
+			}
 		}
 	}
+	
 	free(command);
 	return 0;
 }

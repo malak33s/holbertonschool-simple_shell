@@ -16,7 +16,7 @@
 #include <sys/time.h>
 #include <sys/resource.h>
 
-void disprompt();
-void procommand(char *command);
-
+void prompt(void);
+void disprompt(void);
+int procommand(char *command);
 #endif
