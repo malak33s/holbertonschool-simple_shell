@@ -15,7 +15,7 @@ int procommand(char *command)
 	if (pid < 0)
 	{
 		fprintf(stderr, "error \n");
-		return (-1);
+		return (1);
 	}
 	else if (pid == 0)
 	{
@@ -35,7 +35,7 @@ int procommand(char *command)
 		if (waitpid(pid, &status, 0) == -1)
 		{
 			fprintf(stderr, "Error: waitpid failed\n");
-			return -1;
+			return (1);
 		}
 	}
 	return 0;
