@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * prompt - create a environement variable
- */
+* prompt - display prompt
+*/
 void prompt(void)
 {
         printf("$ ");

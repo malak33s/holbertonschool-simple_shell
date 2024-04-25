@@ -22,8 +22,6 @@ int main()
 			break;
 		}
 		
-		command[strcspn(command, "\n")] = '\0';
-		
 		if (strlen(command) > 0)
 		{
 			if (procommand(command) == -1)
