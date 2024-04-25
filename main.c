@@ -5,10 +5,10 @@
  *
  */
 
-int main(void)
+int main()
 {
 	char *command = NULL;
-	/*size_t bufsize = 0;*/
+	size_t bufsize = 0;
 
 	while (1)
 	{
@@ -16,10 +16,9 @@ int main(void)
 		{
 			prompt();
 		}
-/*
+
 		if (getline(&command, &bufsize, stdin) == -1)
 		{
-			printf("\n");
 			break;
 		}
 		
@@ -31,7 +30,7 @@ int main(void)
 			{
 				fprintf(stderr, "error command: %s\n", command);
 			}
-		}*/
+		}
 	}
 	
 	free(command);
