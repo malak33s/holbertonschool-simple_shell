@@ -63,11 +63,9 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 * write (man 2 write)
 
 ## Flowchart Of simple shell.
-
+![Flowchart simple shell](https://github.com/malak33s/holbertonschool-simple_shell/assets/159031600/4cdb45e5-bbb7-4cb3-a827-e9e1303bcc54)
 
 ## Authors
-
-[Flowchart simple shell.pdf](https://github.com/malak33s/holbertonschool-simple_shell/files/15105814/Flowchart.simple.shell.pdf)
 
 
 Ilhan Ben bouziane.
