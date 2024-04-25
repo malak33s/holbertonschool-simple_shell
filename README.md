@@ -67,6 +67,9 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 ## Authors
 
+[Flowchart simple shell.pdf](https://github.com/malak33s/holbertonschool-simple_shell/files/15105814/Flowchart.simple.shell.pdf)
+
+
 Ilhan Ben bouziane.
 
 Malak sarhani.
