@@ -15,16 +15,16 @@ int procommand(char *command)
 	if (pid < 0)
 	{
 		fprintf(stderr, "error \n");
-		return -1;
+		return (-1);
 	}
 	else if (pid == 0)
 	{
 		args[0] = token;
 		args[1] = NULL;
 		
-		if (execve(args[0], args, NULL) == -1)
+		if (execve(args[0], args, environ) == -1)
 		{
-			fprintf(stderr, " /bin/ls\n");
+			fprintf(stderr, " error\n");
 			exit(EXIT_FAILURE);
 		}
 	}

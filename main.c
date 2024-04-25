@@ -12,7 +12,10 @@ int main()
 
 	while (1)
 	{
-		prompt();
+		if (isatty(STDIN_FILENO))
+		{
+			prompt();
+		}
 
 		if (getline(&command, &bufsize, stdin) == -1)
 		{
