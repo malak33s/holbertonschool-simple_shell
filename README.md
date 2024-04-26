@@ -12,6 +12,15 @@ Command to compil the program of simple shell :
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
+## Exemple
+
+$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+
 ## File Descriptions
 
 * **shell.h** : The header file it contains libraries and prototypes.
