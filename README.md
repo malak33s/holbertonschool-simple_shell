@@ -10,16 +10,20 @@ The Simple Shell project is a program developed in the C language aimed at creat
 
 Command to compil the program of simple shell :
 
+~~~
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+~~~
 
 ## Exemple
 
+~~~
 $ ./hsh
 ($) /bin/ls
 hsh main.c shell.c
 ($)
 ($) exit
 $
+~~~
 
 ## File Descriptions
 
