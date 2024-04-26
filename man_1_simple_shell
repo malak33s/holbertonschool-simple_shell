@@ -12,10 +12,26 @@ $./hsh [option] [file]
 
 The simple_shell is a program developed in the C language to create an interactive, simple  system shell. It allows the user to interact with the operating system by entering commands on the command line. simple_shell supports basic functionality such as command execution, error handling and environment variables.
 
+.SH OPTIONS
+
+The simple shell don't have a command-line option.
 
 .SH BUGS
 
 No Known bugs.
+
+.SH RETURN VALUE
+
+Return 0.
+
+.SH EXAMPLES
+
+$ ./hsh
+$ ls
+AUTHORS  README.md  hsh  main.c  man_1_simple_shell  prompt.c  shell.c  shell.h  simple_shell
+$ pwd
+/holbertonschool-simple_shell
+$ exit
 
 
 .SH AUTHORS
